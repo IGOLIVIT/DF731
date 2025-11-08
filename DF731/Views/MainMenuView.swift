@@ -34,12 +34,6 @@ struct MainMenuView: View {
                             .font(.system(size: 70, weight: .thin))
                             .foregroundColor(Color(hex: "#FFD640"))
                             .shadow(color: Color(hex: "#FFD640").opacity(0.5), radius: 30, x: 0, y: 0)
-                        
-                        Text("Paths of Falling Echoes")
-                            .font(.system(size: 28, weight: .bold))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 20)
                     }
                     .padding(.bottom, 20)
                     
