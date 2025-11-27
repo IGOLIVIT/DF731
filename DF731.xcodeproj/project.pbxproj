@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		78BD10212ECD07A00007C67E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78BD10202ECD07A00007C67E /* GoogleService-Info.plist */; };
+		78BD10242ECD26060007C67E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 78BD10232ECD26060007C67E /* FirebaseMessaging */; };
+		78BD10272ECD26390007C67E /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 78BD10262ECD26390007C67E /* AppsFlyerLib */; };
+		78BD10332ECD26BE0007C67E /* imagenotificationservice.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 78BD102C2ECD26BE0007C67E /* imagenotificationservice.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		781CDFE12EBCEE320099211C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +28,61 @@
 			remoteGlobalIDString = 781CDFD22EBCEE300099211C;
 			remoteInfo = DF731;
 		};
+		78BD10312ECD26BE0007C67E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781CDFCB2EBCEE300099211C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78BD102B2ECD26BE0007C67E;
+			remoteInfo = imagenotificationservice;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78BD10382ECD26BE0007C67E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				78BD10332ECD26BE0007C67E /* imagenotificationservice.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		781CDFD32EBCEE300099211C /* DF731.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DF731.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		781CDFE02EBCEE320099211C /* DF731Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DF731Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		781CDFEA2EBCEE320099211C /* DF731UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DF731UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BD101D2ECD045E0007C67E /* Sindikat-DST.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sindikat-DST.entitlements"; sourceTree = "<group>"; };
+		78BD10202ECD07A00007C67E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78BD102C2ECD26BE0007C67E /* imagenotificationservice.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imagenotificationservice.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		78BD101F2ECD04BD0007C67E /* Exceptions for "DF731" folder in "DF731" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 781CDFD22EBCEE300099211C /* DF731 */;
+		};
+		78BD10372ECD26BE0007C67E /* Exceptions for "imagenotificationservice" folder in "imagenotificationservice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 78BD102B2ECD26BE0007C67E /* imagenotificationservice */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		781CDFD52EBCEE300099211C /* DF731 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78BD101F2ECD04BD0007C67E /* Exceptions for "DF731" folder in "DF731" target */,
+			);
 			path = DF731;
 			sourceTree = "<group>";
 		};
@@ -45,6 +96,14 @@
 			path = DF731UITests;
 			sourceTree = "<group>";
 		};
+		78BD102D2ECD26BE0007C67E /* imagenotificationservice */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78BD10372ECD26BE0007C67E /* Exceptions for "imagenotificationservice" folder in "imagenotificationservice" target */,
+			);
+			path = imagenotificationservice;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78BD10242ECD26060007C67E /* FirebaseMessaging in Frameworks */,
+				78BD10272ECD26390007C67E /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,15 +130,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78BD10292ECD26BE0007C67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		781CDFCA2EBCEE300099211C = {
 			isa = PBXGroup;
 			children = (
+				78BD101D2ECD045E0007C67E /* Sindikat-DST.entitlements */,
+				78BD10202ECD07A00007C67E /* GoogleService-Info.plist */,
 				781CDFD52EBCEE300099211C /* DF731 */,
 				781CDFE32EBCEE320099211C /* DF731Tests */,
 				781CDFED2EBCEE320099211C /* DF731UITests */,
+				78BD102D2ECD26BE0007C67E /* imagenotificationservice */,
 				781CDFD42EBCEE300099211C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +159,7 @@
 				781CDFD32EBCEE300099211C /* DF731.app */,
 				781CDFE02EBCEE320099211C /* DF731Tests.xctest */,
 				781CDFEA2EBCEE320099211C /* DF731UITests.xctest */,
+				78BD102C2ECD26BE0007C67E /* imagenotificationservice.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,16 +174,20 @@
 				781CDFCF2EBCEE300099211C /* Sources */,
 				781CDFD02EBCEE300099211C /* Frameworks */,
 				781CDFD12EBCEE300099211C /* Resources */,
+				78BD10382ECD26BE0007C67E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				78BD10322ECD26BE0007C67E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				781CDFD52EBCEE300099211C /* DF731 */,
 			);
 			name = DF731;
 			packageProductDependencies = (
+				78BD10232ECD26060007C67E /* FirebaseMessaging */,
+				78BD10262ECD26390007C67E /* AppsFlyerLib */,
 			);
 			productName = DF731;
 			productReference = 781CDFD32EBCEE300099211C /* DF731.app */;
@@ -163,6 +239,28 @@
 			productReference = 781CDFEA2EBCEE320099211C /* DF731UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		78BD102B2ECD26BE0007C67E /* imagenotificationservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78BD10342ECD26BE0007C67E /* Build configuration list for PBXNativeTarget "imagenotificationservice" */;
+			buildPhases = (
+				78BD10282ECD26BE0007C67E /* Sources */,
+				78BD10292ECD26BE0007C67E /* Frameworks */,
+				78BD102A2ECD26BE0007C67E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				78BD102D2ECD26BE0007C67E /* imagenotificationservice */,
+			);
+			name = imagenotificationservice;
+			packageProductDependencies = (
+			);
+			productName = imagenotificationservice;
+			productReference = 78BD102C2ECD26BE0007C67E /* imagenotificationservice.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +282,9 @@
 						CreatedOnToolsVersion = 26.1;
 						TestTargetID = 781CDFD22EBCEE300099211C;
 					};
+					78BD102B2ECD26BE0007C67E = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 781CDFCE2EBCEE300099211C /* Build configuration list for PBXProject "DF731" */;
@@ -195,6 +296,10 @@
 			);
 			mainGroup = 781CDFCA2EBCEE300099211C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				78BD10222ECD26060007C67E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				78BD10252ECD26390007C67E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 781CDFD42EBCEE300099211C /* Products */;
 			projectDirPath = "";
@@ -203,6 +308,7 @@
 				781CDFD22EBCEE300099211C /* DF731 */,
 				781CDFDF2EBCEE320099211C /* DF731Tests */,
 				781CDFE92EBCEE320099211C /* DF731UITests */,
+				78BD102B2ECD26BE0007C67E /* imagenotificationservice */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78BD10212ECD07A00007C67E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +330,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		781CDFE82EBCEE320099211C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78BD102A2ECD26BE0007C67E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +367,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78BD10282ECD26BE0007C67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +386,11 @@
 			isa = PBXTargetDependency;
 			target = 781CDFD22EBCEE300099211C /* DF731 */;
 			targetProxy = 781CDFEB2EBCEE320099211C /* PBXContainerItemProxy */;
+		};
+		78BD10322ECD26BE0007C67E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78BD102B2ECD26BE0007C67E /* imagenotificationservice */;
+			targetProxy = 78BD10312ECD26BE0007C67E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -302,6 +428,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -365,6 +492,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -393,24 +521,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sindikat-DST.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38SFKQ4T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DF731/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Plins of Falling Echoes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to camera to upload photos to websites.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to photo library to upload images to websites.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This app would like to access your device identifier to provide personalized ads and improve your experience. You can change this setting at any time in Privacy Settings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = IOI.DF731;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lec.grjr4k39lk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -431,24 +565,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sindikat-DST.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38SFKQ4T2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DF731/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Plins of Falling Echoes";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to camera to upload photos to websites.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to photo library to upload images to websites.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This app would like to access your device identifier to provide personalized ads and improve your experience. You can change this setting at any time in Privacy Settings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = IOI.DF731;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lec.grjr4k39lk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -544,6 +684,62 @@
 			};
 			name = Release;
 		};
+		78BD10352ECD26BE0007C67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38SFKQ4T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imagenotificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = imagenotificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lec.grjr4k39lk.imagenotificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78BD10362ECD26BE0007C67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P38SFKQ4T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imagenotificationservice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = imagenotificationservice;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lec.grjr4k39lk.imagenotificationservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,7 +779,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		78BD10342ECD26BE0007C67E /* Build configuration list for PBXNativeTarget "imagenotificationservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BD10352ECD26BE0007C67E /* Debug */,
+				78BD10362ECD26BE0007C67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78BD10222ECD26060007C67E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+		78BD10252ECD26390007C67E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78BD10232ECD26060007C67E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78BD10222ECD26060007C67E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		78BD10262ECD26390007C67E /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78BD10252ECD26390007C67E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 781CDFCB2EBCEE300099211C /* Project object */;
 }
